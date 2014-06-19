@@ -12,7 +12,7 @@ $handler = new Monolog\ElasticLogstashHandler($client, ['type' => 'invoicing-log
 $handler->setFormatter($formatter);
 
 
-$log = new Monolog\Logger('');
+$log = new Monolog\Logger('invoicing');
 $log->pushHandler($handler);
 $log->warn('new sale', ['user_id' => 42, 'product_id' => 7537]);
 ```
