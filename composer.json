@@ -1,0 +1,26 @@
+{
+    "name": "nulpunkt/monolog-elasticsearch-logstashformat",
+    "type": "library",
+    "description": "Use the logstash formatter with elasticsearch",
+    "keywords": ["elasticsearch", "monolog", "logstash", "kibana"],
+    "homepage": "http://github.com/nulpunkt/monolog-elasticsearch-logstashformat",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jesper Skovgård Nielsen",
+            "email": "nulpunkt@gmail.com",
+            "homepage": "http://runlevel0.dk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+		"elasticsearch/elasticsearch": "~1.0",
+		"monolog/monolog": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Monolog\\": "src/Monolog"
+        }
+    }
+}
